@@ -5,13 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	<style type="text/css">
-		/* Larger than iPhone 4 Media Queries */
+		/* Larger than iPhone 6 Media Queries */
 		@media screen and (max-width:667px){
-
+			.gm {
+				width:100%;
+			}
+			.main p {
+				font-size: 16px !important;
+			}
+			.footer span {
+				display: block !important;
+			}
+			.footer .hyp {
+				display: none !important;
+			}
+			.footer .desk {
+				display: none !important;
+			}
+			.footer .mob {
+				display: block !important;
+			}
+		}
+		/* iPhone 6 Media Queries */
+		@media screen and (max-width:375px){
+			.main p {
+				font-size: 14px !important;
+			}
+			.main h1 {
+				font-size: 32px !important;
+			}
 		}
 		/* iPhone 4 Media Queries */
 		@media screen and (max-width:320px){
-
+			.main p {
+				font-size: 12px !important;
+			}
+			.main h1 {
+				font-size: 28px !important;
+			}
 		}
 	</style>
 </head>
@@ -21,7 +52,7 @@
 		<tbody>
 			<tr>
 				<td>
-					<table width="600" align="center" border="0" cellspacing="0" cellpadding="0">
+					<table class="gm" width="600" align="center" border="0" cellspacing="0" cellpadding="0">
 						<tbody>
 							<tr class="header" style="padding:0; margin:0; background-color:#0769AD; height:36px; text-align:right; color:white;">
 								<td style="padding-right:26px;">
@@ -48,9 +79,14 @@
 							</tr>
 							<tr class="footer" style='text-align:center; vertical-align:top; background-color: #063E65; height:120px;'>
 								<td style="color:white; font-size:12px; padding-top:40px;">
-									<span style="margin:0px; padding:0px;"><a style="color:white;" href="#">Unsubscribe from this mailing list</a></span> - 
+									<span style="margin:0px; padding:0px;"><a style="color:white;" href="#">Unsubscribe from this mailing list</a></span> <span class="hyp">-</span> 
 									<span style="margin:0px; padding:0px;"><a style="color:white;" href="#">View this email in your browser</a></span>
-									<p style="margin:0px; padding:0px; padding-top:5px;">&copy; 2016 GotMovers 7945 W Sahara Avenue, Ste 205, Las Vegas, NV 89117</p>
+									<p class="desk" style="margin:0px; padding:0px; padding-top:5px;">&copy; 2016 GotMovers 7945 W Sahara Avenue, Ste 205, Las Vegas, NV 89117</p>
+									<div class="mob" style="display:none; margin:0px; padding:0px; padding-top:5px;">
+										<p style="margin:0; padding:0; padding-bottom:5px;">&copy; 2016 GotMovers</p>
+										<p style="margin:0; padding:0; padding-bottom:5px;">7945 W Sahara Avenue,</p> 
+										<p style="margin:0; padding:0; padding-bottom:36px;">Ste 205, Las Vegas, NV 89117</p>
+									</div>
 								</td>
 							</tr>
 						</tbody>
