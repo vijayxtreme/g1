@@ -3,8 +3,22 @@
 <head>
 	<title>Got Movers Email Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	<style type="text/css">
+
+	/* Hacks for stopping iOS, Yahoo, Hotmail Styling */
+		.main a {text-decoration: none !important; }
+		.appleLinksWhite { color: white !important; text-decoration: none !important; }
+		a[x-apple-data-detectors] {
+		  color: inherit !important;
+		  text-decoration: none !important;
+		  font-size: inherit !important;
+		  font-family: inherit !important;
+		  font-weight: inherit !important;
+		  line-height: inherit !important;
+		}
+		
 		/* Larger than iPhone 6 Media Queries */
 		@media screen and (max-width:667px){
 			.gm {
@@ -29,6 +43,10 @@
 				width:100% !important;
 				max-width: 334px !important;
 			}
+			.cta-btn-outer {
+				padding-left:0px !important;
+				padding-right: 0px !important;
+			}
 		}
 		/* iPhone 6 Media Queries */
 		@media screen and (max-width:375px){
@@ -49,12 +67,10 @@
 			}
 		}
 
-		/* Hacks for stopping iOS, Yahoo, Hotmail Styling */
-		.main a {text-decoration: none !important; }
-		.appleLinksWhite { color: white !important; text-decoration: none !important; }
+
 	</style>
 </head>
-<body style="margin:0; padding:0;  padding-top:30px; height:720px; background-color:#ccc; font-family:'Open Sans', serif;">
+<body style="margin:0; padding:0;  padding-top:30px; height:720px; background-color:#ccc; font-family:'Open Sans', sans-serif;">
 
 	<table class="container" align="center" border="0" cellspacing="0" cellpadding="0" style="-webkit-font-smoothing:antialiased; margin:0px; padding:0px;" width="100%">
 		<tbody>
@@ -64,26 +80,26 @@
 						<tbody>
 							<tr class="header" style="padding:0; margin:0; background-color:#0769AD; height:36px; text-align:right; color:white;">
 								<td style="padding-right:26px;">
-									<a href="#" style="color:white; font-family:'Open Sans'; font-size:12px;">View in Browser</a>
+									<a href="#" style="color:white; font-family:'Open Sans', sans-serif; text-decoration:underline; font-size:12px;">View in Browser</a>
 								</td>
 							</tr>
 							<tr>
 								<td style="vertical-align:top; text-align:center; padding:0px; margin:0px; padding-top:17px; padding-bottom:13px; background-color:white;">
-									<a href="http://www.gotmovers.com"><img src="img/gotmovers_logo.png" width="192" height="42"></a>
+									<a href="http://www.gotmovers.com"><img src="https://gallery.mailchimp.com/001ccd80f4fb23c7a6938d857/images/7075c642-b7ff-453e-81ec-5c80990da062.png" width="192" height="42"></a>
 								</td>
 							</tr>
-							<tr class="main" style="vertical-align:top; background:url(img/got_bg.png); background-position: 0px -107px; font-family:'Open Sans'; color:white;">
+							<tr class="main" style="vertical-align:top; background:url(https://gallery.mailchimp.com/001ccd80f4fb23c7a6938d857/images/4312e897-c4f7-4726-b1b8-275c7eb428cf.png); background-position: 0px -107px; font-family:'Open Sans', sans-serif; color:white;">
 								<td style="padding-left:42px; padding-right:43px;">
 									<div style="font-size:18px; padding-top:23px;">
 										<p style="margin:0; padding:0; padding-bottom:13px;">Hi Ben,</p>
 										<p style="margin:0; padding:0; line-height:30px;">Here's another moving company that can service your move from CA to NY.</p>
 									</div>
-									<div style="text-align:center; padding-top:28px;">
+									<div class="cta-btn-outer" style="text-align:center; padding-top:28px; padding-right:90.5px; padding-left:90.5px;">
 										<p style="margin:0; padding:0; font-weight:600; font-size:16px; padding-bottom:18px;">For a quick quote call</p>
-										<a href="tel:+18001231234" style="font-family:'Open Sans'; font-weight:800; display:block; font-size:40px; color:white; cursor:pointer;">
+										<a href="tel:+18001231234" style="font-family:'Open Sans', sans-serif; font-weight:800; display:block; font-size:40px; color:white; cursor:pointer;">	
 											<table class="cta-btn" width="334" align="center" border="0" cellspacing="0" cellpadding="0" style="background:#f68a0c; color:white; border-radius:3px; width:334px; height:55px;">
 												<tbody>
-													<tr>
+													<tr align="center">
 														<td>
 															<span class=”appleLinksWhite”>1-800-123-1234</span>
 														</td>
@@ -91,15 +107,17 @@
 												</tbody>
 											</table>
 										</a>
-										<p style="margin:0; padding:0; padding-top:16px; padding-bottom:60px; font-weight:600; font-size:16px;">Available from <span class="appleLinksWhite">8AM</span> - <span class="appleLinksWhite">5PM</span> EST Mon - Fri</p>
+										<p style="margin:0; padding:0; padding-top:16px; padding-bottom:60px; font-weight:600; font-size:16px;">Available <span class="appleLinksWhite">from 8AM - 5PM</span> EST Mon - Fri</p>
 									</div>
 								</td>
 							</tr>
 							<tr class="footer" style='text-align:center; vertical-align:top; background-color: #063E65; height:120px;'>
 								<td style="color:white; font-size:12px; padding-top:40px;">
-									<span style="margin:0px; padding:0px;"><a style="color:white;" href="#">Unsubscribe from this mailing list</a></span> <span class="hyp">-</span> 
-									<span style="margin:0px; padding:0px;"><a style="color:white;" href="#">View this email in your browser</a></span>
-									<p class="desk" style="margin:0px; padding:0px; padding-top:5px;">&copy; 2016 GotMovers <span class="appleLinksWhite">7945</span> W Sahara Avenue, <span class="appleLinksWhite">Ste</span> 205, Las Vegas, NV 89117</p>
+									<span style="margin:0px; padding:0px;"><a style="color:white; text-decoration:underline;" href="#">Unsubscribe from this mailing list</a></span> <span class="hyp">-</span> 
+									<span style="margin:0px; padding:0px;"><a style="color:white; text-decoration:underline;" href="#">View this email in your browser</a></span>
+									
+									<p class="desk" style="margin:0px; padding:0px; padding-top:5px;">&copy; 2016 GotMovers <span class="appleLinksWhite">7945 W Sahara Avenue, Ste 205, Las Vegas, NV 89117</span></p>
+									
 									<div class="mob" style="display:none; margin:0px; padding:0px; padding-top:5px;">
 										<p style="margin:0; padding:0; padding-bottom:5px;">&copy; 2016 GotMovers</p>
 										<p style="margin:0; padding:0; padding-bottom:5px;">7945 W Sahara Avenue,</p> 
@@ -113,6 +131,10 @@
 			</tr>	
 		</tbody>
 	</table>
-
+<div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</div>
 </body>
 </html>
